@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Tailwind output
+public/styles.css
+
+# Logs
+*.log
+
+# Environment
+.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
