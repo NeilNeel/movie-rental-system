@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home | Movie Rental</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="min-h-screen flex flex-col bg-black text-white font-retro overflow-hidden"
+  >
+    <div class="flex flex-1 flex-col bg-black h-full min-h-screen">
+      <header>
+        <nav
+          class="bg-deepGray text-neonMint px-6 py-4 flex justify-between items-center"
+        >
+          <a href="index.html" class="text-sm font-bold tracking-widest"
+            >Movie Rental</a
+          >
+          <ul class="flex space-x-6 text-xs">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li>
+              <a href="my-movies.html" class="hover:text-white"
+                >My Rented Movies</a
+              >
+            </li>
+            <li><a href="login.html" class="hover:text-white">Login</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="grid grid-cols-2 w-full flex-grow overflow-hidden">
+        <!-- IMAGE COLUMN -->
+        <div class="flex items-center justify-center h-full overflow-hidden">
+          <div class="w-4/5 h-3/5 relative overflow-hidden">
+            <img
+              src="./img/tmp/cinema-hover-pinch.gif"
+              alt="Retro Login GIF"
+              class="w-full h-full object-contain transform -rotate-6"
+            />
+          </div>
+        </div>
+
+        <!-- FORM COLUMN -->
+        <div class="md:w-10/12 p-4">
+          <h1 class="text-neonMint text-title mb-6 text-left">Login</h1>
+          <form class="flex flex-col gap-4 mb-6">
+            <label for="user_email" class="text-neonMint text-subsmall"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              name="user_email"
+              placeholder="abc@gmail.com"
+              class="bg-black text-slate-50 px-4 mb-2 placeholder-neonMint text-xl focus:outline-none border-b border-neonMint"
+            />
+            <label for="user_password" class="text-neonMint text-subsmall"
+              >Password</label
+            >
+            <input
+              type="password"
+              placeholder="*******"
+              class="bg-black text-slate-50 text-xl px-4 mb-2 placeholder-neonMint focus:outline-none border-b border-neonMint"
+            />
+            <button
+              class="movie-card--rent-btn text-subsmall p-4 hover:text-slate-50"
+            >
+              Login
+            </button>
+          </form>
+        </div>
+      </main>
+
+      <footer
+        class="bg-deepGray text-center text-xs text-neonMint py-4 mt-auto"
+      >
+        © 2025 Retro Movie Rental. Built by Luffy & Batman.
+      </footer>
+    </div>
+  </body>
+</html>
